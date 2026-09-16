@@ -1,0 +1,1115 @@
+{
+  "run_timestamp": "2026-09-16T16:39:10.799404+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "sample_size": 20,
+  "valid_verifications": 20,
+  "errors": 0,
+  "overall_accuracy": 0.8071,
+  "field_accuracy": {
+    "primary_auth": 0.7,
+    "self_serve": 0.9,
+    "api_type": 0.9,
+    "api_breadth": 0.8,
+    "buildability": 0.75,
+    "has_existing_mcp": 0.75,
+    "has_composio_integration": 0.85
+  },
+  "mismatches": [
+    {
+      "app": "Otter AI",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "API Key",
+      "notes": "Otter.ai is primarily a consumer-facing and team-oriented transcription tool rather than an API-first platform, making integration discovery and access difficult without direct sales outreach."
+    },
+    {
+      "app": "Otter AI",
+      "field": "has_existing_mcp",
+      "original": true,
+      "verified": false,
+      "notes": "Otter.ai is primarily a consumer-facing and team-oriented transcription tool rather than an API-first platform, making integration discovery and access difficult without direct sales outreach."
+    },
+    {
+      "app": "NotebookLM",
+      "field": "api_type",
+      "original": "None",
+      "verified": "REST",
+      "notes": "NotebookLM utilizes Google backend infrastructure, closely related to Gemini API offerings."
+    },
+    {
+      "app": "NotebookLM",
+      "field": "api_breadth",
+      "original": "none",
+      "verified": "moderate",
+      "notes": "NotebookLM utilizes Google backend infrastructure, closely related to Gemini API offerings."
+    },
+    {
+      "app": "NotebookLM",
+      "field": "buildability",
+      "original": "not-feasible",
+      "verified": "feasible",
+      "notes": "NotebookLM utilizes Google backend infrastructure, closely related to Gemini API offerings."
+    },
+    {
+      "app": "Twenty",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "API Key",
+      "notes": "Twenty is an open-source CRM with built-in REST and GraphQL APIs, as well as a native MCP server."
+    },
+    {
+      "app": "Twenty",
+      "field": "api_type",
+      "original": "REST",
+      "verified": "REST+GraphQL",
+      "notes": "Twenty is an open-source CRM with built-in REST and GraphQL APIs, as well as a native MCP server."
+    },
+    {
+      "app": "Attio",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "OAuth 2.0",
+      "notes": "Attio provides comprehensive developer documentation, standard OAuth 2.0 authentication, REST API access, and even an official MCP server."
+    },
+    {
+      "app": "Zoho Cliq",
+      "field": "api_breadth",
+      "original": "moderate",
+      "verified": "comprehensive",
+      "notes": "Zoho Cliq provides a developer platform with robust API support, webhooks, slash commands, functions, and bots, using standard Zoho OAuth2 authentication."
+    },
+    {
+      "app": "SE Ranking",
+      "field": "self_serve",
+      "original": "paid-plan-required",
+      "verified": "self-serve-trial",
+      "notes": "The API uses simple API key authentication obtained from the user settings, and provides structured JSON responses with a Postman collection for testing."
+    },
+    {
+      "app": "SE Ranking",
+      "field": "api_breadth",
+      "original": "moderate",
+      "verified": "comprehensive",
+      "notes": "The API uses simple API key authentication obtained from the user settings, and provides structured JSON responses with a Postman collection for testing."
+    },
+    {
+      "app": "SE Ranking",
+      "field": "buildability",
+      "original": "feasible",
+      "verified": "ready",
+      "notes": "The API uses simple API key authentication obtained from the user settings, and provides structured JSON responses with a Postman collection for testing."
+    },
+    {
+      "app": "SE Ranking",
+      "field": "has_existing_mcp",
+      "original": false,
+      "verified": true,
+      "notes": "The API uses simple API key authentication obtained from the user settings, and provides structured JSON responses with a Postman collection for testing."
+    },
+    {
+      "app": "Waterfall.io",
+      "field": "buildability",
+      "original": "feasible",
+      "verified": "ready",
+      "notes": "The API uses an 'x-api-key' or 'x-waterfall-api-key' header for authentication. Pricing requires contacting sales or booking a call for a custom benchmark."
+    },
+    {
+      "app": "Vercel",
+      "field": "has_composio_integration",
+      "original": true,
+      "verified": false,
+      "notes": "The REST API is extremely well-documented with extensive endpoints covering deployments, domains, DNS, projects, etc. Authentication is done via standard Bearer tokens generated in account settings."
+    },
+    {
+      "app": "Shopify",
+      "field": "has_existing_mcp",
+      "original": true,
+      "verified": false,
+      "notes": "Shopify provides both robust REST and GraphQL Admin and Storefront APIs, with standard OAuth2 authentication for apps."
+    },
+    {
+      "app": "Fanbasis (Commas)",
+      "field": "self_serve",
+      "original": "contact-sales",
+      "verified": "self-serve-free",
+      "notes": "Fanbasis has rebranded to Commas. They explicitly offer an MCP beta and APIs/SDKs for enterprise sellers."
+    },
+    {
+      "app": "Fanbasis (Commas)",
+      "field": "buildability",
+      "original": "feasible",
+      "verified": "ready",
+      "notes": "Fanbasis has rebranded to Commas. They explicitly offer an MCP beta and APIs/SDKs for enterprise sellers."
+    },
+    {
+      "app": "Plaid",
+      "field": "has_composio_integration",
+      "original": false,
+      "verified": true,
+      "notes": "The fetched docs explicitly reference a Plaid MCP Server."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_breadth",
+      "original": "moderate",
+      "verified": "limited",
+      "notes": "Paygent is a Japanese payment gateway service. The fetched landing page only shows marketing material, contact forms, and news, which means API documentation requires partner/merchant access."
+    },
+    {
+      "app": "GoHighLevel",
+      "field": "buildability",
+      "original": "feasible",
+      "verified": "ready",
+      "notes": "The Stoplight documentation confirms a robust REST API backed by OAuth2 and API keys."
+    },
+    {
+      "app": "GoHighLevel",
+      "field": "has_composio_integration",
+      "original": false,
+      "verified": true,
+      "notes": "The Stoplight documentation confirms a robust REST API backed by OAuth2 and API keys."
+    },
+    {
+      "app": "Notion",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "OAuth 2.0",
+      "notes": "Notion provides comprehensive documentation covering public OAuth, internal integrations, and personal access tokens."
+    },
+    {
+      "app": "Notion",
+      "field": "has_existing_mcp",
+      "original": true,
+      "verified": false,
+      "notes": "Notion provides comprehensive documentation covering public OAuth, internal integrations, and personal access tokens."
+    },
+    {
+      "app": "Gorgias",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "Basic Auth",
+      "notes": "Gorgias provides a comprehensive REST API widely used by e-commerce and support tools, typically authenticating via HTTP Basic Auth (email and API key/token) or OAuth2 for applications."
+    },
+    {
+      "app": "Front",
+      "field": "primary_auth",
+      "original": "OAuth2",
+      "verified": "Bearer Token",
+      "notes": "Front provides comprehensive REST APIs, an MCP server, developer accounts with free sandbox environments, and clear documentation."
+    },
+    {
+      "app": "Front",
+      "field": "has_existing_mcp",
+      "original": false,
+      "verified": true,
+      "notes": "Front provides comprehensive REST APIs, an MCP server, developer accounts with free sandbox environments, and clear documentation."
+    }
+  ],
+  "verifications": [
+    {
+      "app_name": "Otter AI",
+      "app_id": 92,
+      "category": "AI, Research and Media-native",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "limited",
+        "buildability": "challenging",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "limited",
+        "buildability": "challenging",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "Otter.ai is primarily a consumer-facing and team-oriented transcription tool rather than an API-first platform, making integration discovery and access difficult without direct sales outreach.",
+      "evidence": {
+        "self_serve": "Otter.ai historically focuses on consumer and team subscription tiers (Pro, Business, Enterprise) with API access typically gated behind higher tier enterprise plans or custom developer requests requiring contact with sales.",
+        "mcp": "No official Model Context Protocol (MCP) server exists for Otter.ai in the public domain.",
+        "composio": "Otter.ai is not currently listed as a pre-built integration on Composio."
+      },
+      "pages_fetched": [],
+      "timestamp": "2026-09-16T16:36:05.827867+00:00"
+    },
+    {
+      "app_name": "NotebookLM",
+      "app_id": 91,
+      "category": "AI, Research and Media-native",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "None",
+        "api_breadth": "none",
+        "buildability": "not-feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": false,
+        "api_breadth": false,
+        "buildability": false,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.5714285714285714,
+      "correct_count": 4,
+      "total_fields": 7,
+      "verification_notes": "NotebookLM utilizes Google backend infrastructure, closely related to Gemini API offerings.",
+      "evidence": {
+        "self_serve": "Get your no cost Gemini API key",
+        "mcp": "No official MCP server found in the documentation.",
+        "composio": "Not listed on composio.dev directly under this specific tool name."
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:36:16.607047+00:00"
+    },
+    {
+      "app_name": "Twenty",
+      "app_id": 5,
+      "category": "CRM and Sales",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST+GraphQL",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": false,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "Twenty is an open-source CRM with built-in REST and GraphQL APIs, as well as a native MCP server.",
+      "evidence": {
+        "self_serve": "Sign up for Cloud in under a minute and start your 30-day trial.",
+        "mcp": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language.",
+        "composio": ""
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:36:23.649418+00:00"
+    },
+    {
+      "app_name": "Attio",
+      "app_id": 4,
+      "category": "CRM and Sales",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth 2.0",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "Attio provides comprehensive developer documentation, standard OAuth 2.0 authentication, REST API access, and even an official MCP server.",
+      "evidence": {
+        "self_serve": "Designed for every stage of your journey. Start today, no credit card required. Monthly Annual $0 0 Per user/month, billed monthly annually For individuals to explore Attio on their own.",
+        "mcp": "Connect your GTM stack with the REST API, App SDK, or Attio MCP.",
+        "composio": "No mention of Composio found in the provided documentation or pricing pages."
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:36:32.140768+00:00"
+    },
+    {
+      "app_name": "Lark",
+      "app_id": 24,
+      "category": "Communications and Messaging",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 1.0,
+      "correct_count": 7,
+      "total_fields": 7,
+      "verification_notes": "Lark provides comprehensive REST APIs through its open platform with tenant/user access tokens.",
+      "evidence": {
+        "self_serve": "Lark open platform provides free developer account creation and application creation for developers on their platform.",
+        "mcp": "No official Model Context Protocol server found in the documentation.",
+        "composio": "Not listed as an existing integration in Composio."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:36:39.073684+00:00"
+    },
+    {
+      "app_name": "Zoho Cliq",
+      "app_id": 23,
+      "category": "Communications and Messaging",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": false,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "Zoho Cliq provides a developer platform with robust API support, webhooks, slash commands, functions, and bots, using standard Zoho OAuth2 authentication.",
+      "evidence": {
+        "self_serve": "Free Try Now Get Started ... After your 14-day trial expires you will need to purchase a subscription to convert your trial account into a permanent account",
+        "mcp": "No MCP server found in developer documentation or context.",
+        "composio": "Not listed as an existing integration on Composio based on available verification data."
+      },
+      "pages_fetched": [
+        "main",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:36:47.899900+00:00"
+    },
+    {
+      "app_name": "SE Ranking",
+      "app_id": 52,
+      "category": "Data, SEO and Scraping",
+      "original": {
+        "primary_auth": "API Key",
+        "self_serve": "paid-plan-required",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": false,
+        "api_type": true,
+        "api_breadth": false,
+        "buildability": false,
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.42857142857142855,
+      "correct_count": 3,
+      "total_fields": 7,
+      "verification_notes": "The API uses simple API key authentication obtained from the user settings, and provides structured JSON responses with a Postman collection for testing.",
+      "evidence": {
+        "self_serve": "API access comes with any SE Ranking plan. You can even test it in the free trial account. Pay-as-you-go is also available with a $50 minimum deposit.",
+        "mcp": "Connect via MCP to query data from inside Claude or any AI assistant... SE Ranking\u2019s MCP server connects SE Ranking\u2019s data directly to AI assistants like Claude, Codex, Gemini, Cursor, and any other client.",
+        "composio": "No mention or evidence of an existing Composio integration in the provided documentation."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:36:57.420143+00:00"
+    },
+    {
+      "app_name": "Waterfall.io",
+      "app_id": 59,
+      "category": "Data, SEO and Scraping",
+      "original": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": false,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "The API uses an 'x-api-key' or 'x-waterfall-api-key' header for authentication. Pricing requires contacting sales or booking a call for a custom benchmark.",
+      "evidence": {
+        "self_serve": "Rates are quoted against your data... Per-credit rates depend on the endpoints you use and the volume you commit to. We quote after running a benchmark on a sample of your own records... Book a call to hear more",
+        "mcp": "",
+        "composio": ""
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:37:05.315360+00:00"
+    },
+    {
+      "app_name": "Vercel",
+      "app_id": 62,
+      "category": "Developer, Infra and Data platforms",
+      "original": {
+        "primary_auth": "Bearer Token",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "verified": {
+        "primary_auth": "Bearer Token",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "The REST API is extremely well-documented with extensive endpoints covering deployments, domains, DNS, projects, etc. Authentication is done via standard Bearer tokens generated in account settings.",
+      "evidence": {
+        "self_serve": "Create and manage Access Tokens in your account settings.",
+        "mcp": "No official Model Context Protocol server is mentioned in the Vercel REST API documentation.",
+        "composio": "Not listed as an existing integration in the provided context."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:37:23.020108+00:00"
+    },
+    {
+      "app_name": "Snowflake",
+      "app_id": 67,
+      "category": "Developer, Infra and Data platforms",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 1.0,
+      "correct_count": 7,
+      "total_fields": 7,
+      "verification_notes": "Snowflake supports SQL API, Python (Snowpark), and multiple drivers, with authentication heavily relying on OAuth2 and key-pair authentication.",
+      "evidence": {
+        "self_serve": "Getting a Trial Account",
+        "mcp": "No official Model Context Protocol server found in documentation or standard repositories.",
+        "composio": "Not listed as a built-in integration in the standard Composio registry."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:37:31.933574+00:00"
+    },
+    {
+      "app_name": "Shopify",
+      "app_id": 41,
+      "category": "Ecommerce",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST+GraphQL",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST+GraphQL",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "Shopify provides both robust REST and GraphQL Admin and Storefront APIs, with standard OAuth2 authentication for apps.",
+      "evidence": {
+        "self_serve": "Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shopify's docs, dev tools and frameworks make building easy and efficient.",
+        "mcp": "No official Model Context Protocol server is mentioned in the Shopify developer documentation.",
+        "composio": "Shopify is supported via Composio integrations."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:37:40.170697+00:00"
+    },
+    {
+      "app_name": "Fanbasis (Commas)",
+      "app_id": 50,
+      "category": "Ecommerce",
+      "original": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "feasible",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": false,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": false,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "Fanbasis has rebranded to Commas. They explicitly offer an MCP beta and APIs/SDKs for enterprise sellers.",
+      "evidence": {
+        "self_serve": "Get started / What used to take seven apps and a developer now takes one Commas account.",
+        "mcp": "MCP beta: Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+        "composio": ""
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:37:49.090572+00:00"
+    },
+    {
+      "app_name": "Plaid",
+      "app_id": 82,
+      "category": "Finance and Fintech",
+      "original": {
+        "primary_auth": "API Key",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "The fetched docs explicitly reference a Plaid MCP Server.",
+      "evidence": {
+        "self_serve": "Plaid offers a free development environment tier for developers to build and test.",
+        "mcp": "Mentioned in the docs: 'Plug me in via the Plaid MCP Server.'",
+        "composio": "Plaid is widely integrated within platforms like Composio."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:37:58.528210+00:00"
+    },
+    {
+      "app_name": "Paygent Connect",
+      "app_id": 84,
+      "category": "Finance and Fintech",
+      "original": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "moderate",
+        "buildability": "challenging",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "API Key",
+        "self_serve": "contact-sales",
+        "api_type": "REST",
+        "api_breadth": "limited",
+        "buildability": "challenging",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": false,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "Paygent is a Japanese payment gateway service. The fetched landing page only shows marketing material, contact forms, and news, which means API documentation requires partner/merchant access.",
+      "evidence": {
+        "self_serve": "web\u304b\u3089\u306e\u304a\u554f\u3044\u5408\u308f\u305b / \u8cc7\u6599\u8acb\u6c42\u30fb\u304a\u554f\u3044\u5408\u308f\u305b",
+        "mcp": "No MCP server found in developer documentation or public repositories.",
+        "composio": "Not listed on composio.dev integrations catalog."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:38:16.428994+00:00"
+    },
+    {
+      "app_name": "GoHighLevel",
+      "app_id": 34,
+      "category": "Marketing, Ads, Email and Social",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "paid-plan-required",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "feasible",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "paid-plan-required",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": false,
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "The Stoplight documentation confirms a robust REST API backed by OAuth2 and API keys.",
+      "evidence": {
+        "self_serve": "GoHighLevel requires a paid subscription plan to access its platform and API capabilities.",
+        "mcp": "No official Model Context Protocol (MCP) server was found in the documentation.",
+        "composio": "GoHighLevel is supported within the Composio integration ecosystem."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:38:24.213819+00:00"
+    },
+    {
+      "app_name": "Threads",
+      "app_id": 39,
+      "category": "Marketing, Ads, Email and Social",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 1.0,
+      "correct_count": 7,
+      "total_fields": 7,
+      "verification_notes": "The Meta Threads API is fully accessible via standard Meta app developer dashboards using OAuth2 authentication.",
+      "evidence": {
+        "self_serve": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights.",
+        "mcp": "No official Model Context Protocol (MCP) server exists in the Meta Threads developer documentation.",
+        "composio": "Not listed as an existing integration in the target database."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:38:33.456429+00:00"
+    },
+    {
+      "app_name": "Harvest",
+      "app_id": 80,
+      "category": "Productivity and Project Management",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": true,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 1.0,
+      "correct_count": 7,
+      "total_fields": 7,
+      "verification_notes": "Harvest API v2 is well documented and standard REST endpoints cover full resource management.",
+      "evidence": {
+        "self_serve": "Harvest offers a 30-day free trial for new accounts.",
+        "mcp": "No official Model Context Protocol server found in Harvest documentation.",
+        "composio": "No prior Composio integration exists for Harvest."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:38:41.567396+00:00"
+    },
+    {
+      "app_name": "Notion",
+      "app_id": 71,
+      "category": "Productivity and Project Management",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "verified": {
+        "primary_auth": "OAuth 2.0",
+        "self_serve": "self-serve-free",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "Notion provides comprehensive documentation covering public OAuth, internal integrations, and personal access tokens.",
+      "evidence": {
+        "self_serve": "The fastest way to start building is the Quickstart \u2014 create a personal access token, make your first API request, and see a new page appear in your workspace in under two minutes.",
+        "mcp": "No mention of a Model Context Protocol server in the official documentation.",
+        "composio": "Notion is supported on Composio."
+      },
+      "pages_fetched": [
+        "docs"
+      ],
+      "timestamp": "2026-09-16T16:38:50.016808+00:00"
+    },
+    {
+      "app_name": "Gorgias",
+      "app_id": 19,
+      "category": "Support and Helpdesk",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "paid-plan-required",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "Basic Auth",
+        "self_serve": "paid-plan-required",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": true,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.8571428571428571,
+      "correct_count": 6,
+      "total_fields": 7,
+      "verification_notes": "Gorgias provides a comprehensive REST API widely used by e-commerce and support tools, typically authenticating via HTTP Basic Auth (email and API key/token) or OAuth2 for applications.",
+      "evidence": {
+        "self_serve": "Helpdesk scales from 50 to 5,000 tickets a month, never priced per agent. Book a demo.",
+        "mcp": "No official Model Context Protocol server found in the provided documentation or public repositories.",
+        "composio": "Not listed as an existing integration on Composio based on general knowledge."
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:38:57.863489+00:00"
+    },
+    {
+      "app_name": "Front",
+      "app_id": 14,
+      "category": "Support and Helpdesk",
+      "original": {
+        "primary_auth": "OAuth2",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": false,
+        "has_composio_integration": false
+      },
+      "verified": {
+        "primary_auth": "Bearer Token",
+        "self_serve": "self-serve-trial",
+        "api_type": "REST",
+        "api_breadth": "comprehensive",
+        "buildability": "ready",
+        "has_existing_mcp": true,
+        "has_composio_integration": false
+      },
+      "field_matches": {
+        "primary_auth": false,
+        "self_serve": true,
+        "api_type": true,
+        "api_breadth": true,
+        "buildability": true,
+        "has_existing_mcp": false,
+        "has_composio_integration": true
+      },
+      "accuracy": 0.7142857142857143,
+      "correct_count": 5,
+      "total_fields": 7,
+      "verification_notes": "Front provides comprehensive REST APIs, an MCP server, developer accounts with free sandbox environments, and clear documentation.",
+      "evidence": {
+        "self_serve": "Starter plan has a 'Try for Free' option and developer accounts get access to a free developer environment.",
+        "mcp": "MCP Server: Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources.",
+        "composio": ""
+      },
+      "pages_fetched": [
+        "docs",
+        "pricing"
+      ],
+      "timestamp": "2026-09-16T16:39:05.798734+00:00"
+    }
+  ]
+}

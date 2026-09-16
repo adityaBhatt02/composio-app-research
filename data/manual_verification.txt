@@ -1,0 +1,26 @@
+MANUAL SPOT-CHECK: 5 Apps Verified Against Real Developer Docs
+================================================================
+
+App       | Field        | Report Says       | Docs Confirm            | Correct?
+----------|--------------|-------------------|-------------------------|----------
+Slack     | Auth         | OAuth2            | OAuth2 + Bot Tokens     | YES
+Slack     | Self-serve   | self-serve-free   | Free signup confirmed   | YES
+Slack     | API type     | REST              | REST (Web API)          | YES
+GitHub    | Auth         | OAuth2            | PAT / OAuth / App token | PARTIAL — PAT is more common than OAuth2 for individual use
+GitHub    | Self-serve   | self-serve-free   | Free signup confirmed   | YES
+GitHub    | API type     | REST              | REST + GraphQL          | WRONG — GitHub offers both REST and GraphQL
+Stripe    | Auth         | API Key           | API Key (HTTP Basic)    | YES
+Stripe    | Self-serve   | self-serve-free   | Free test keys instant  | YES
+Stripe    | API type     | REST              | REST                    | YES
+Notion    | Auth         | OAuth2            | Bearer Token / OAuth    | PARTIAL — Bearer token is primary, OAuth for public integrations
+Notion    | Self-serve   | self-serve-free   | Free integration setup  | YES
+Notion    | API type     | REST              | REST                    | YES
+Shopify   | Auth         | OAuth2            | OAuth2 for apps         | YES
+Shopify   | Self-serve   | self-serve-free   | Free dev account        | YES
+Shopify   | API type     | REST+GraphQL      | REST + GraphQL (GraphQL preferred) | YES
+
+Summary: 12/15 checks correct, 2 partial, 1 wrong.
+- GitHub api_type listed as "REST" but should be "REST+GraphQL"
+- GitHub primary_auth listed as "OAuth2" but PAT is more common for individual devs
+- Notion primary_auth listed as "OAuth2" but Bearer Token is the primary method
+Overall manual accuracy: 80-87% (consistent with automated verification at 80.7%)
