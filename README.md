@@ -4,7 +4,7 @@ An AI-powered research pipeline that investigates 100 apps across 10 categories 
 
 ## Live Deliverable
 
-👉 **[View the Report](https://your-deployment-url.vercel.app)** _(replace after deployment)_
+ **[View the Report](https://adityabhatt02.github.io/composio-app-research/)**
 
 ## Architecture
 
